@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <marquee behavior="scroll" direction="left">Welcome to My Website</marquee><title>Document</title>
+   
+   <style>
+        input{ background-color: rgb(201, 225, 201);}
+        textarea{ background-color: rgb(201, 225, 201);}
+        body{  background-image: url('Hilltop Tree with Starry Sky and  Night.jpg'); 
+               background-size: cover; 
+               background-repeat: no-repeat;
+               background-position: center;}
+         h1{ color: rgb(92, 92, 238);}
+         h2{ color: rgb(7, 242, 7);}
+        label{ font-size: 20px;
+            color: rgba(242, 243, 239, 0.886);
+            font-style: inherit; }
+        select{ background-color: rgb(201, 225, 201);}
+        marquee{ color: blanchedalmond; }
+
+    </style> 
+</head>
+
+ <body>
+    <form><i style="color: blanchedalmond;"> 
+        <center>  <h1>Personal Details</h1></center></i>
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your fullname name" maxlength="50"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="enter your email"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="enter your number"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" maxlength="8" placeholder="enter your age"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" placeholder="enter your address" rows="2" cols="30"></textarea>
+       <input type="range">
+       <input type="color">
+       <br><br>
+
+        <h2>Gender:</h2>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"><br><br>
+
+        <h2>Hobbies:</h2>
+        <input type="checkbox" id="reading" name="hobby">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="music" name="hobby" style="margin-left: 30px;">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="hobby" style="margin-left: 30px;">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="others" name="hobby" style="margin-left: 30px;">
+        <label for="others">Others</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country ">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="Nepal">Nepal</option>
+            </select><br><br>
+
+            <label for="attachresume">Attach resume:</label>
+            <input type="file" id="attachresume" name="attachresume" required><br><br>
+
+            <table>
+                <tr>
+                   <td><input type="submit" value="Submit"></td>
+                    <td><button type="button">Cancel</button></td>
+                    <td><input type="reset" value="Reset"></td> 
+                </tr>
+            </table>
+
+    </form> 
+    
+</body>
+</html>
